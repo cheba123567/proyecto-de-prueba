@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Tienda de Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💻 TechStore</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div>🛒 Carrito: <span id="contador">0</span></div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h2>La mejor tecnología para ti</h2>
+        <p>Celulares, laptops y accesorios a excelentes precios.</p>
+        <a href="#productos" class="boton">Ver productos</a>
+    </section>
+
+    <main id="productos">
+        <h2>Productos destacados</h2>
+
+        <div class="productos">
+            <article class="producto">
+                <div class="imagen">💻</div>
+                <h3>Laptop Gamer</h3>
+                <p>Potencia para estudiar y jugar.</p>
+                <strong>S/ 2,499</strong>
+                <button onclick="agregarAlCarrito()">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <article class="producto">
+                <div class="imagen">📱</div>
+                <h3>Smartphone</h3>
+                <p>Rendimiento y buena cámara.</p>
+                <strong>S/ 999</strong>
+                <button onclick="agregarAlCarrito()">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <article class="producto">
+                <div class="imagen">🎧</div>
+                <h3>Audífonos</h3>
+                <p>Disfruta tu música favorita.</p>
+                <strong>S/ 149</strong>
+                <button onclick="agregarAlCarrito()">
+                    Agregar al carrito
+                </button>
+            </article>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <p>© 2026 TechStore - Tu tienda de tecnología</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
